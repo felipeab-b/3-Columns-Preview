@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+}
+
+main {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca";
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  0 15rem;
+}
+
+.card {
+    display: flex;
+    margin-top: 3em;
+    height: 534px;
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3rem;
+    flex: 1 1 18rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+}
+
+.card2 { 
+    background-color: hsl(184, 100%, 22%);
+    padding: 3rem;
+    flex: 1 1 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3rem;
+    flex: 1 1 18rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+}
+
+img {
+    width: 4rem;
+}
+
+.title1,.title2,.title3 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    margin: 2.5rem 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.desc1,.desc2,.desc3 {
+    margin-bottom: 90px;
+    line-height: 1.6em;
+    display: block;
+    width: 220px;
+}
+
+.button1,.button2,.button3 {
+    font-size: 16px;
+    font-family: "Lexend Deca";
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    width: fit-content;
+    text-align: center;
+}
+
+.button1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button1:hover {
+    cursor: pointer;
+    border: hsl(0, 0%, 95%) solid 1px;
+    background-color: hsl(31, 77%, 52%);
+    transition: all ease-in-out 0.5s;
+    color: hsl(0, 0%, 95%);
+}
+
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button2:hover {
+    cursor: pointer;
+    border: hsl(0, 0%, 95%) solid 1px;
+    background-color: hsl(184, 100%, 22%);
+    transition: all ease-in-out 0.5s;
+    color: hsl(0, 0%, 95%);
+}
+
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.button3:hover {
+    cursor: pointer;
+    border: hsl(0, 0%, 95%) solid 1px;
+    background-color: hsl(179, 100%, 13%);
+    transition: all ease-in-out 0.5s;
+    color: hsl(0, 0%, 95%);
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-family: "Lexend Deca";
+    font-size: smaller;
+}
+
+.footer > a {
+    text-decoration: underline;
+    color: black;
+}
+
+@media only screen and (max-width: 935px) {
+
+    main {
+        padding: 0;
+    }
+
+    .card {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .card1 {
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    .card3 {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .footer {
+        visibility: hidden;
+    }
+
+}
